@@ -1,12 +1,11 @@
-class Meeting {
-    constructor({ Username, MeetingRoom, MeetingDate, TimeTo, TimeFrom, Agenda }) {
-        this.getMeetingRoom = () => MeetingRoom;
-        this.Username = () => Username;
-        this.MeetingDate = () => MeetingDate;
-        this.TimeTo = () => TimeTo;
-        this.TimeFrom = () => TimeFrom;
-        this.Agenda = () => Agenda;
-    }
+function Meeting({meetingId, userName, room, date, startTime, endTime, agenda }) {
+    this.getMeetingId = () => meetingId;
+    this.getUserName = () => userName;
+    this.getRoom = () => room;
+    this.getDate = () => date;
+    this.getStartTime = () => startTime;
+    this.getEndTime = () => endTime;
+    this.getAgenda = () => agenda;
 }
- 
+
 export default Meeting
